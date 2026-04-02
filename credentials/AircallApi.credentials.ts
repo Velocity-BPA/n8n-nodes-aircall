@@ -36,6 +36,14 @@ export class AircallApi implements ICredentialType {
       required: true,
       description: 'The API Token from your Aircall dashboard',
     },
+    {
+      displayName: 'Base URL',
+      name: 'baseUrl',
+      type: 'string',
+      default: 'https://api.aircall.io/v1',
+      description: 'The base URL for the Aircall API',
+      required: true,
+    },
   ];
 
   authenticate: IAuthenticateGeneric = {
