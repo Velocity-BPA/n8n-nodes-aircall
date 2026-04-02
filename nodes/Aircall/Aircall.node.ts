@@ -232,7 +232,7 @@ export class Aircall implements INodeType {
         );
 
         returnData.push(...executionData);
-      } catch (error) {
+      } catch (error: any) {
         if (this.continueOnFail()) {
           returnData.push({
             json: {
